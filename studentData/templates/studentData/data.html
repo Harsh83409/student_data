@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .table-container {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .grade-A {
+            background-color: #d4edda;
+        }
+
+        .grade-B {
+            background-color: #fff3cd;
+        }
+
+        .grade-C {
+            background-color: #f8d7da;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Maths</th>
+                    <th>English</th>
+                    <th>Grade</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr class="grade-A">
+                    <td>{{data.St_id}}</td>
+                    <td>{{data.Name}}</td>
+                    <td>{{data.address}}</td>
+                    <td>{{data.maths}}</td>
+                    <td>{{data.english}}</td>
+                    <td>{{data.grade}}</td>
+                    <td>{{data.gender}}</td>
+                </tr>
+               
+               
+            
+                <!-- More student rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
